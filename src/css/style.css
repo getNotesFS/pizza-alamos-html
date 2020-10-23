@@ -1,8 +1,90 @@
-body{
-    background-color: dark!important;
+/*FONTS*/
+/*QUICSAND FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+ 
 
+
+/*BACKGROUND AND ANOTHER GLOBAL STYLES*/
+.bg-darkLA {
+  background-color: #20202f;
+}
+.lightLA{
+    color:#ffffff;
+}
+.darkLA{
+    color:#20202f;;
+}
+/*ICON COLOR*/
+ion-icon{
+    color:#ffffff;
+}
+/*FOOTER*/
+
+.footer-logo svg{
+    width: 250px!important;
 }
 
-div{
-    background: green;
+footer{
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 4%;
 }
+
+.footer-info h3{
+    font-weight: 700;
+    color:#e4b95b;
+}
+.footer-info p{
+    color:#ffffff;
+    font-weight: 400; 
+    margin: 2px;
+}
+
+.footer-info {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+
+.copyright .copyright-text{
+    font-weight: 400!important;
+    font-size: 0.7em;
+    color:#ffffff;
+}
+
+.loationMarker ion-icon{
+    font-size: 50px;
+}
+
+.loationMarker{
+    text-align: center;
+}
+.loationMarker p{
+     display: inline-block;
+     width: 100%;
+     font-weight: 500;
+}
+
+ .loationMarker ion-icon:hover{
+    color:#e4b95b;
+    cursor: pointer;
+}
+
+/*MAPA*/
+.mapaLA{ 
+    display: none;  
+    margin: 0px;
+    padding: 0px;
+}
+.mapaLA iframe{
+    width: 100%;
+}
+ 
+.hideLA{
+    display: none!important;
+}
+.showLA{
+    display: block!important; 
+}
+
