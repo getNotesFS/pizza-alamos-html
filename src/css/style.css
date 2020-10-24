@@ -18,15 +18,24 @@
 ion-icon{
     color:#ffffff;
 }
-/*FOOTER*/
 
+
+ 
+
+ 
+/*======================================0FOOTER*/
+.footer-logo{
+    padding-top: 4%;
+}
 .footer-logo svg{
     width: 250px!important;
 }
 
 footer{
-    font-family: 'Quicksand', sans-serif;
-    padding-top: 4%;
+    font-family: 'Quicksand', sans-serif; 
+}
+.footerMainContainer{
+    display: none;
 }
 
 .footer-info h3{
@@ -88,3 +97,111 @@ footer{
     display: block!important; 
 }
 
+
+/*======================================CONTACT*/
+
+.form_datosContacto{
+    font-family: 'Quicksand', sans-serif;
+}
+.titulo_PaginasDark{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.titulo_ParrafosYellow, .titulo_ParrafosDark{
+    font-weight: 600;
+}
+.titulo_ParrafosYellow{
+    color:#e4b95b;
+}
+.btn-Dark{
+    color: #ffffff!important;
+    font-weight: 600!important;
+    background-color: #383848!important;
+}
+
+.btn-Dark:hover{
+    background-color:#e4b95b!important;
+}
+
+
+.secCabecera2 p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+/*OVERLAY DE MAPA*/
+#mapaLAContactoOverlay{
+    width  : 100%;
+    height : 450px;
+    background:#0000008c;
+    position: absolute;
+    opacity: 0.5;
+    top: 0px; 
+    left: 0px; 
+    z-index: 2;
+}
+#mapaLAContactoOverlay:hover{
+    display: none;
+}
+.mapaContacto{
+    position: relative;
+}
+.mapaSL iframe{
+    width: 100%;
+}
+ 
+.iconArrowDown, .iconArrowLocation{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iconArrowLocation{
+    margin-top: 20px;
+}
+
+.icon-default{
+    width: 254px;
+    background: url(/images/pattern-white.png) no-repeat center center;
+    height: 59px;
+    z-index: 30;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin-top: -65px;
+}
+.icon-find{
+    width: 254px;
+    background: url(/images/find-us.png) no-repeat center center;
+    height: 59px;
+    z-index: 30;
+    text-align: center;
+    padding: 20px 0 0 0; 
+    cursor: pointer;
+}
+ 
+ 
+.icon-default ion-icon{
+    color:grey!important;
+    font-size: 50px;
+}
+.icon-find ion-icon{
+    color:#ffffff!important;
+    font-size: 40px;
+}
+
+
+.LINE_YELLOW{
+    height: 30px;
+    background-color: #e4b95b;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: none;
+}
