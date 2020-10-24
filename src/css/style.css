@@ -20,6 +20,42 @@ ion-icon {
   color: #ffffff;
 }
 
+
+/************************************ NAVBAR ********************************/
+.nv-header1{
+  line-height: 25px;
+  background-color: #e4b95b;
+  padding: 1px 0;
+  color: white;
+}
+.nv-margen{
+  padding-top: 12px;
+}
+.nv-texto-header1{
+  font-size: 0.7em;
+}
+.nv-telefono{
+  text-align: right;
+}
+.nv-redes{
+  text-align: center;
+}
+.nv-redes-icons{
+  margin: 0 5px;
+  padding-top: 3px;
+  font-size: 20px;
+}
+.nv-user-icon{
+  font-size: 30px;
+  margin-left: 5px;
+}
+.nv-shop-icon{
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+
 /*======================================0FOOTER*/
 .footer-logo {
   padding-top: 4%;
