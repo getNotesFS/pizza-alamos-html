@@ -498,10 +498,10 @@ footer {
   width: 100%;
   height: 100%;
 }
-#carouselSingleProduct .prevIcon,#carouselSingleProduct .nextIcon{
-  color:#20202f;
+#carouselSingleProduct .prevIcon,
+#carouselSingleProduct .nextIcon {
+  color: #20202f;
   font-size: 34px;
-
 }
 
 #carouselSingleProduct .carousel-indicators {
@@ -532,6 +532,286 @@ footer {
   border-radius: 20px;
 }
 
+/*================================================================CART LIST - CHECKOUT*/
+/*
+.listadoProductos {
+  background-color: #dee2e6;
+  padding: 2%;
+}
+.listadoProductos table th {
+  background-color: #20202f !important;
+  color: white;
+}
+.listadoProductos table th,
+.listadoProductos table td {
+  padding: 18px 0;
+}
+
+.listadoProductos table th:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-left: 38px;
+}
+.listadoProductos table th:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-right: 38px;
+}
+
+.imagenProducto {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 38px;
+  max-width: 120px;
+}
+.imagenProducto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tituloProducto {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.listadoProductos .precioP {
+  display: block;
+  color: #e4b95b;
+  font-size: 1rem;
+}
+.listadoProductos .precioPT {
+  display: block;
+  color: #20202f;
+  font-size: 1rem;
+}
+.tableInputCantidad input {
+  height: 45px;
+}
+
+.actualizarListado {
+  display: inline-block;
+  width: 100%;
+}
+
+.campoCupon {
+  display: inline-block;
+  width: auto;
+  margin-right: 20px;
+}
+.btn-mediano {
+  height: 50px;
+  line-height: 48px;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  width: auto;
+  padding: 0px 35px;
+  min-width: 170px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: none;
+  background: transparent;
+  color: #e4b95b;
+  font-size: 16px;
+  font-weight: 700;
+}
+.bg-darkCupon:hover,
+.bg-yellowCupon:hover {
+  text-decoration: none;
+  color: white;
+}
+.bg-darkCupon {
+  background-color: #20202f !important;
+  color: white;
+}
+.bg-yellowCupon {
+  background-color: #c7a17a !important;
+  color: white;
+}
+.bg-darkCupon:hover {
+  color: #c7a17a;
+}
+.bg-yellowCupon:hover {
+  background-color: #e4b95b !important;
+}
+.campoCupon input {
+  text-align: center;
+  color: #372727;
+  margin: 0px;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #dee2e6;
+  border-radius: 80px;
+  padding: 0 30px;
+  outline: none;
+}
+*/
+
+.campoCupon {
+  display: inline-block;
+  width: auto;
+  margin-right: 20px;
+}
+.btn-mediano {
+  height: 50px;
+  line-height: 48px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: auto;
+  padding: 0px 25px;
+  min-width: 150px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: none;
+  background: transparent;
+  color: #e4b95b;
+  font-size: 16px;
+  font-weight: 700;
+}
+.bg-darkCupon:hover,
+.bg-yellowCupon:hover {
+  text-decoration: none;
+  color: white;
+}
+.bg-darkCupon {
+  background-color: #20202f !important;
+  color: white;
+}
+.bg-yellowCupon {
+  background-color: #c7a17a !important;
+  color: white;
+  float:right!important;
+}
+.bg-darkCupon:hover {
+  color: #c7a17a;
+}
+.bg-yellowCupon:hover {
+  background-color: #e4b95b !important;
+}
+.campoCupon input {
+  text-align: center;
+  color: #372727;
+  margin: 0px;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #dee2e6;
+  border-radius: 80px;
+  padding: 0 30px;
+  outline: none;
+}
+.actualizarListado{
+  width: 100%;
+}
+/*V2*/
+
+.removeProduct {
+  background-color: #dc3545 !important;
+  border: none !important;
+}
+.editProduct {
+  background-color: #d39e00 !important;
+  border: none !important;
+}
+.removeProduct,
+.editProduct {
+  display: inline-flex !important;
+  align-items: center;
+}
+.mainCartList .card {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 10px;
+  padding-left: 20px; 
+  border-radius: 10px;
+}
+.mainCartList img {
+  border-radius: 30px;
+}
+
+.mainCartList button {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.mainCartList .card-text2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ingredientesExtra .text-muted::after {
+  content: " | ";
+  font-weight: 700;
+  color: #e4b95b;
+}
+.mainCartList .card-title {
+  font-size: 28px;
+}
+.mainCartList .tipoMasa {
+  font-weight: 600;
+  color: #e4b95b;
+}
+.mainCartList .card-text {
+  margin-bottom: 0.2rem !important;
+}
+
+.imgProduct {
+  align-self: center;
+}
+.cantidadP{
+  background-color: #dee2e6;
+    padding: 5px 14px 5px 14px;
+    color: grey;
+    font-weight: 600;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 90%;
+    position: absolute;
+}
+
+
+
+.cardTotals{
+  border-radius: 10px;
+}
+
+.txtSubtotal{
+  font-size: 1.4rem;
+}
+.priceSubtotal{
+  font-size: 1.4rem;
+}
+.txtTotal{
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #20202f;
+}
+.priceTotal{
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #e4b95b;
+}
+.tituloSecctionT{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #20202f;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.preciosSubTotP thead{
+  display: none;
+}
+.preciosSubTotP td,.preciosSubTotP th {
+  border-style: none;
+  border:none!important;
+}
 /*===================================================================MEDIA QUERY*/
 @media (max-width: 575.98px) {
   .customImgOffert {
@@ -561,21 +841,25 @@ footer {
     height: auto;
     padding: 35px 10px 15px 10px;
   }
-  
+
   /*SINGLE PRODUCT*/
-  .campoCantidadProducto{
-    width: 100%!important;
-    max-width: 100%!important;
+  .campoCantidadProducto {
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  .btnAgregarACarrito{
-    margin-left: 0px!important;
+  .btnAgregarACarrito {
+    margin-left: 0px !important;
   }
-  .btnSpecialYellow{
-    width: 100%!important;
-    max-width: 100%!important;
+  .btnSpecialYellow {
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  .precioSP{
+  .precioSP {
     text-align: center;
+  }
+
+  .cantidadP{ 
+    left: 85%!important;
   }
 }
 
@@ -609,13 +893,48 @@ footer {
   }
 
   /*TITULO CABECERA*/
-  .tituloPaginasCabera{
-    font-size: 24px!important;
+  .tituloPaginasCabera {
+    font-size: 24px !important;
   }
 
   /*SINGLE PRODUCT*/
-  .singleProduct .singlePRight{
+  .singleProduct .singlePRight {
     padding-top: 12%;
+  }
+
+  /*CART LIST*/
+
+  .mainCartList .card {
+    padding-left: 0px !important;
+    width: 100% !important;
+    margin: 20px !important;
+  }
+  .mainCartList .imgProduct {
+    display: none !important;
+  }
+  .ingredientesExtra {
+    padding-bottom: 15px;
+    display: block;
+  }
+
+  .campoCupon{
+    display: block!important; 
+    width: 90%!important;
+    margin: auto!important;
+  }
+  .btn-mediano{
+    display: block!important;
+    margin-top:10px!important;  
+  }
+  .bg-darkCupon{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+    
+  }
+  .bg-yellowCupon{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+  float:none!important;
   }
 }
 
@@ -635,23 +954,61 @@ footer {
   /*FIRST SECTOPN*/
   .singleProduct .singlePRight {
     padding-top: 0%;
-}
-.btnAgregarACarrito { 
-  margin-left: 0px!important;
+  }
+  .btnAgregarACarrito {
+    margin-left: 0px !important;
+  }
+
+  /*TITULO CABECERA*/
+  /*TITULO CABECERA*/
+
+  .tituloPaginasCabera {
+    font-size: 30px !important;
+  }
+
+  .campoCupon{
+    display: inline-block!important; 
+    width: auto!important;
+    margin: auto!important;
+  }
+  .btn-mediano{
+    display: inline-block!important;
+    margin-top:0px!important;  
+  }
+  .bg-darkCupon{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    
+  }
+  .bg-yellowCupon{
+    margin-left: auto!important;
+    margin-right: auto!important;
+  float:right!important;
+  }
+
+  
 }
 
-/*TITULO CABECERA*/
-/*TITULO CABECERA*/
-.tituloPaginasCabera{
-  font-size: 30px!important;
-}
+@media (min-width: 768px) and (max-width: 769px) {
+  .mainCartList .imgProduct {
+    display: block !important;
+  }
+  .mainCartList .card {
+    margin: 15px !important;
+  }
+  .mainCartList .no-gutters {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+  }
 }
 
 @media (min-width: 992px) {
-  
-/*TITULO CABECERA*/
-/*TITULO CABECERA*/
-.tituloPaginasCabera{
-  font-size: 40px!important;
-}
+  /*TITULO CABECERA*/
+  /*TITULO CABECERA*/
+  .tituloPaginasCabera {
+    font-size: 40px !important;
+  }
+  .cantidadP{  
+    left: 92%!important;
+  }
 }
