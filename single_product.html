@@ -13,13 +13,13 @@
     <!-- IONICONS -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
-    <title>Ofertas</title>
+    <title>Single Product</title>
 </head>
 
 <body>
- 
-           <!-- START NAVBAR-->
-    <header>
+
+     <!-- START NAVBAR-->
+     <header>
 
         <div class="container-fluid nv-header1">
 
@@ -164,65 +164,99 @@
 
     </header>
 
+    <!-- START CABECERA PAGINAS -->
+    <section class="SeccionCabeceraPAGINAS">
 
+        <div class="container-fluid">
+            <div class="row ">
 
- <!-- START CABECERA PAGINAS -->
- <section class="SeccionCabeceraPAGINAS">
+                <div class="cabeceraPaginas">
 
-    <div class="container-fluid">
-        <div class="row ">
-
-            <div class="cabeceraPaginas">
-
-                <h1 class="tituloPaginasCabera">
-                    Offerts
-                </h1>
-               
-                <div class="breadcrumb-inner">
-                    <a href="#">Home</a>
-                    <span>Offerts</span>
-                </div>
-            </div>
-           
-
-        </div>
-    </div>
-</section>
-
-<div class="iconArrowDown">
-    <div class="icon-default2">
-        <ion-icon name="arrow-down-outline"></ion-icon>
-    </div>
-</div>
-
-    <section class="secOfertas pb-5 pt-5">
-        <div class="container">
-              
-
-            <div class="card cardOffert pb-4 pt-4">
-                <div class="row">
-                  <div class="col-md-5 customImgOffert2">
-                    <img class="d-block" src="images/extraPapas.jpg" alt="">
-                  </div>
-                  <div class="col-md-7 customTextOffert">
-                    <div class="card-block shadow">
-                        <h5 class="card-title">Papas Gratis</h5>
-                        <p class="card-text">It's a broader card with text below as a natural lead-in to
-                            extra content. This content is a little longer.</p>
-                            <ul class="list-group ListaDetalleOferta">
-                                <li class="list-group-item"><ion-icon name="checkmark-outline"></ion-icon> Cras justo odio</li>
-                                <li class="list-group-item"><ion-icon name="checkmark-outline"></ion-icon> Dapibus ac facilisis in</li>
-                                <li class="list-group-item"><ion-icon name="checkmark-outline"></ion-icon> Morbi leo risus</li> 
-                              </ul>
-                      
+                    <h1 class="tituloPaginasCabera">
+                        Single Product
+                    </h1>
+                   
+                    <div class="breadcrumb-inner">
+                        <a href="#">Home</a>
+                        <span>Single Product</span>
                     </div>
-                  </div>
-           
                 </div>
-              </div>
-              
+               
+
+            </div>
         </div>
     </section>
+
+    <div class="iconArrowDown">
+        <div class="icon-default2">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
+    </div>
+
+    <!-- START MAIN SECTION -->
+
+    <section class="pt-5 singleProduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 singlePLeft">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="carouselSingleProduct" class="carousel slide" data-ride="carousel" align="center">
+                                    <!-- slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"> <img src="images/extraPapas.jpg" alt="Hills"> </div>
+                                        <div class="carousel-item"> <img src="images/pizza1.jpg" alt="Hills"> </div>
+                                        <div class="carousel-item"> <img src="images/pizzaDouble.jpg" alt="Hills"> </div>
+                                        <div class="carousel-item"> <img src="images/pizzaPersonal.jpg" alt="Hills"> </div>
+                                    </div> 
+                                    <!-- Left right --> 
+                                    <a class="carousel-control-prev" href="#carouselSingleProduct" data-slide="prev"> <ion-icon class="prevIcon" name="chevron-back-outline"></ion-icon></a> 
+                                    <a class="carousel-control-next" href="#carouselSingleProduct" data-slide="next"> <ion-icon class="nextIcon" name="chevron-forward-outline"></ion-icon> </a> 
+                                    <!-- Thumbnails -->
+                                    <ol class="carousel-indicators list-inline">
+                                        <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carouselSingleProduct"> <img src="images/extraPapas.jpg" class="img-fluid"> </a> </li>
+                                        <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#carouselSingleProduct"> <img src="images/pizza1.jpg" class="img-fluid"> </a> </li>
+                                        <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#carouselSingleProduct"> <img src="images/pizzaDouble.jpg" class="img-fluid"> </a> </li>
+                                        <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#carouselSingleProduct"> <img src="images/pizzaPersonal.jpg" class="img-fluid"> </a> </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 singlePRight">
+                    <h4 class="tituloSP">Caramel Cheesecake</h4>
+                    <p class="descripcionSP">If you're planning to start an online store right away, look no further, get this template on
+                        templateForest. This product page demonstrates a "Simple Product".</p>
+                    <h3 class="precioSP">$290.50</h3>
+                    <div class="campoCantidadProducto">
+                        <span class="disminuir"><ion-icon name="remove-outline"></ion-icon></span>
+                        <input type="text" name="txt" placeholder="1" pattern="[0-9]">
+                        <span class="agregar"><ion-icon name="add-outline"></ion-icon></span>
+                    </div>
+                    <a href="#" class="btnAgregarACarrito btnSpecialYellow "><ion-icon name="basket-outline"></ion-icon>Añadir al Carrito</a>
+                    <div class="compartirRS mt-4">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="bloqueRS d-flex align-items-center">
+                                    <h5>COMPARTIR</h5>
+                                    <ul class="socialList">
+                                        <li class="social-facebook"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                        <li class="social-instagram"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                        <li class="social-twitter"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
 
 
@@ -347,6 +381,7 @@
                 tabindex="0"></iframe>
         </div>
     </footer>
+
 
     <!-- BOOTSTRAP JS FILES -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

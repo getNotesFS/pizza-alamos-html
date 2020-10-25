@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif !important;
 }
 /*BACKGROUND AND ANOTHER GLOBAL STYLES*/
 .bg-darkLA {
@@ -20,41 +20,48 @@ ion-icon {
   color: #ffffff;
 }
 
-
 /************************************ NAVBAR ********************************/
-.nv-header1{
+.nv-header1 {
   line-height: 25px;
   background-color: #e4b95b;
   padding: 1px 0;
   color: white;
 }
-.nv-margen{
+.nv-margen {
   padding-top: 12px;
 }
-.nv-texto-header1{
+.nv-texto-header1 {
   font-size: 0.7em;
 }
-.nv-telefono{
+.nv-telefono {
   text-align: right;
 }
-.nv-redes{
+.nv-redes {
   text-align: center;
 }
-.nv-redes-icons{
+.nv-redes-icons {
   margin: 0 5px;
   padding-top: 3px;
   font-size: 20px;
 }
-.nv-user-icon{
+.nv-user-icon {
   font-size: 30px;
   margin-left: 5px;
 }
-.nv-shop-icon{
+.nv-shop-icon {
   font-size: 30px;
   margin-left: 5px;
   margin-right: 20px;
 }
 
+.loginPart a {
+  text-decoration: none;
+  color: white;
+}
+.loginPart a:hover {
+  text-decoration: none;
+  color: #20202f;
+}
 
 /*======================================0FOOTER*/
 .footer-logo {
@@ -317,9 +324,11 @@ footer {
 }
 
 .cabeceraPaginas {
-  display: flex;
-  align-items: center;
+  /*display: flex;
+  align-items: center;*/
   width: 100%;
+  text-align: center;
+  padding-top: 140px;
 }
 .cabeceraPaginas .tituloPaginasCabera {
   color: white;
@@ -327,9 +336,10 @@ footer {
 
 .breadcrumb-inner {
   color: #ffffff;
-  top: 30%;
-  position: absolute;
+  /*top: 44%;
+  position: absolute;*/
   font-size: 16px;
+  padding-top: 20px;
 }
 .breadcrumb-inner a {
   color: #ffffff;
@@ -348,7 +358,181 @@ footer {
   padding: 0 8px 0 10px;
 }
 
-/*MEDIA QUERY*/
+/*===================================SINGLE PRODUCT*/
+
+.tituloSP,
+.precioSP {
+  font-weight: 700;
+}
+
+.campoCantidadProducto {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  max-width: 120px;
+  text-align: center;
+  color: #372727;
+}
+.campoCantidadProducto ion-icon {
+  color: #20202f;
+  font-weight: 700;
+  font-size: 20px;
+}
+.campoCantidadProducto input {
+  text-align: center;
+  color: #372727;
+  margin: 0px;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #dee2e6;
+  border-radius: 80px;
+  padding: 0 30px;
+  outline: none;
+}
+.campoCantidadProducto .disminuir {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+.campoCantidadProducto .agregar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.btnAgregarACarrito {
+  text-decoration: none;
+  margin-left: 18px;
+}
+.btnAgregarACarrito:hover {
+  background: #20202f;
+}
+.btnSpecialYellow {
+  display: inline-block;
+  width: auto;
+  max-width: 250px;
+  height: 50px;
+  line-height: 50px;
+  background: #e4b95b;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  padding: 0 20px;
+}
+.btnAgregarACarrito:hover {
+  text-decoration: none;
+  color: white;
+}
+.btnAgregarACarrito ion-icon {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+
+  position: relative;
+  top: 8px;
+}
+.compartirRS ion-icon {
+  color: grey;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+}
+.social-facebook ion-icon:hover {
+  background-color: #3b5998;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid #3b5998;
+}
+.social-instagram ion-icon:hover {
+  background-color: #fbad50;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid #fbad50;
+}
+.social-twitter ion-icon:hover {
+  background-color: #337ab7;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid #337ab7;
+}
+
+.socialList {
+  display: inline-block;
+  width: auto;
+  padding-left: 5px;
+  margin: 0px;
+}
+.socialList li {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+.compartirRS h5 {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px !important;
+  color: #20202f;
+  font-weight: 700;
+}
+.bloqueRS {
+  margin-bottom: 2%;
+  margin-right: 2px;
+}
+
+/*Slider Single Product*/
+
+.singleProduct .carousel-inner {
+  /*background: #e9ecef !important;*/
+}
+.singleProduct .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+#carouselSingleProduct .prevIcon,#carouselSingleProduct .nextIcon{
+  color:#20202f;
+  font-size: 34px;
+
+}
+
+#carouselSingleProduct .carousel-indicators {
+  position: static;
+  margin-top: 20px;
+}
+
+#carouselSingleProduct .carousel-indicators > li {
+  width: 100px;
+}
+
+#carouselSingleProduct .carousel-indicators li img {
+  display: block;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+#carouselSingleProduct .carousel-indicators li.active img {
+  opacity: 1;
+}
+
+#carouselSingleProduct .carousel-indicators li:hover img {
+  opacity: 0.75;
+}
+
+.singleProduct .carousel-item img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+/*===================================================================MEDIA QUERY*/
 @media (max-width: 575.98px) {
   .customImgOffert {
     height: auto !important;
@@ -376,6 +560,22 @@ footer {
   .card-block {
     height: auto;
     padding: 35px 10px 15px 10px;
+  }
+  
+  /*SINGLE PRODUCT*/
+  .campoCantidadProducto{
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+  .btnAgregarACarrito{
+    margin-left: 0px!important;
+  }
+  .btnSpecialYellow{
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+  .precioSP{
+    text-align: center;
   }
 }
 
@@ -407,6 +607,16 @@ footer {
     height: auto;
     padding: 35px 10px 15px 10px;
   }
+
+  /*TITULO CABECERA*/
+  .tituloPaginasCabera{
+    font-size: 24px!important;
+  }
+
+  /*SINGLE PRODUCT*/
+  .singleProduct .singlePRight{
+    padding-top: 12%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -422,4 +632,26 @@ footer {
     font-weight: 700;
     font-size: 24px !important;
   }
+  /*FIRST SECTOPN*/
+  .singleProduct .singlePRight {
+    padding-top: 0%;
+}
+.btnAgregarACarrito { 
+  margin-left: 0px!important;
+}
+
+/*TITULO CABECERA*/
+/*TITULO CABECERA*/
+.tituloPaginasCabera{
+  font-size: 30px!important;
+}
+}
+
+@media (min-width: 992px) {
+  
+/*TITULO CABECERA*/
+/*TITULO CABECERA*/
+.tituloPaginasCabera{
+  font-size: 40px!important;
+}
 }
