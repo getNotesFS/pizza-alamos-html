@@ -21,6 +21,9 @@ ion-icon {
 }
 
 /************************************ NAVBAR ********************************/
+.logoHNavbar img {
+  width: 130px;
+}
 .nv-header1 {
   line-height: 25px;
   background-color: #e4b95b;
@@ -63,9 +66,79 @@ ion-icon {
   color: #20202f;
 }
 
+/*CART LIST FLOTANTE*/
+#carritoMenu {
+  cursor: pointer;
+}
+.cartListFlotante {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: auto;
+  padding-top: 15px;
+  z-index: 99;
+  display: block;
+}
+
+.cartContenedor {
+  background: #ffffff;
+  max-width: 430px;
+  padding: 30px 20px;
+  color: #20202f;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  position: relative;
+  z-index: 99;
+}
+.productoItem {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 35px;
+}
+.imagenProductoCF {
+  display: table-cell;
+  width: 66px;
+  vertical-align: middle;
+}
+.imagenProductoCF img {
+  width: 100%;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+.nombrePrecioCF {
+  padding-left: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.removerProductoCF {
+  position: absolute;
+  right: 0px;
+  width: 12px;
+  height: 15px;
+  top: 10px;
+}
+.removerProductoCF ion-icon {
+  color: black;
+  cursor: pointer;
+}
+.resumenCosto {
+  display: inline-block;
+  width: 100%;
+}
+.opcionesCheckout {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
 /*======================================0FOOTER*/
 .footer-logo {
   padding-top: 4%;
+  padding-bottom: 2%;
 }
 .footer-logo svg {
   width: 250px !important;
@@ -136,6 +209,88 @@ footer {
   display: block !important;
 }
 
+
+/*======================================HOME PAGE*/
+.mainSliderHomePage .carousel-item {
+  min-height: calc(86vh);
+  max-height: calc(88vh);
+}
+.slidee1{
+  background-image: url("../../images/pizzaDouble.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mainSliderHomePage .contenidoSlider{
+  padding-top: 20%;
+  padding-bottom: 8%;
+  
+}
+.mainSliderHomePage .carousel-item h5{
+  font-size: 57px;
+  display: block;
+  width: 100%;
+}
+.mainSliderHomePage .carousel-item p{
+  font-size: 24px;
+  width: 100%; 
+  display: block;
+}
+.mainSliderHomePage .carousel-caption {
+  height: 100%;
+}
+.mainSliderHomePage .carousel-control-prev ion-icon,.mainSliderHomePage .carousel-control-next ion-icon{
+  font-size: 45px;
+}
+.mainSliderHomePage .bg-darkCupon{
+  background-color: transparent!important; 
+  font-size: 80%!important;
+}
+
+/*SECCION BIENVENIDOS*/
+.imgContainerMiddle img{
+  width: 100%;
+}
+/*SLIDER PRODUCTOS*/
+.sliderProductos{
+  background-color: #20202f;
+}
+
+
+.listadoProductosSlider .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; 
+    color: white;
+}
+
+.listadoProductosSlider .card-title{
+  color: white;
+}
+.listadoProductosSlider .btn{
+  color:white;
+}
+
+.listadoProductosSlider .card{
+  background-color: transparent!important;
+  border: none!important;
+}
+.listadoProductosSlider .card-body{
+  text-align: center;
+}
+.listadoProductosSlider .precioProductoListado{
+  color:#d39e00;
+  font-weight: 700; 
+}
+.listadoProductosSlider .carousel-indicators{
+  margin-top: 500px!important;
+}
+.carousel-item{
+  height: 500px;
+}
 /*======================================CONTACT*/
 
 .form_datosContacto {
@@ -533,124 +688,6 @@ footer {
 }
 
 /*================================================================CART LIST - CHECKOUT*/
-/*
-.listadoProductos {
-  background-color: #dee2e6;
-  padding: 2%;
-}
-.listadoProductos table th {
-  background-color: #20202f !important;
-  color: white;
-}
-.listadoProductos table th,
-.listadoProductos table td {
-  padding: 18px 0;
-}
-
-.listadoProductos table th:first-child {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding-left: 38px;
-}
-.listadoProductos table th:last-child {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  padding-right: 38px;
-}
-
-.imagenProducto {
-  display: table-cell;
-  vertical-align: middle;
-  padding-right: 38px;
-  max-width: 120px;
-}
-.imagenProducto img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.tituloProducto {
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: 600;
-}
-
-.listadoProductos .precioP {
-  display: block;
-  color: #e4b95b;
-  font-size: 1rem;
-}
-.listadoProductos .precioPT {
-  display: block;
-  color: #20202f;
-  font-size: 1rem;
-}
-.tableInputCantidad input {
-  height: 45px;
-}
-
-.actualizarListado {
-  display: inline-block;
-  width: 100%;
-}
-
-.campoCupon {
-  display: inline-block;
-  width: auto;
-  margin-right: 20px;
-}
-.btn-mediano {
-  height: 50px;
-  line-height: 48px;
-  font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
-  display: inline-block;
-  width: auto;
-  padding: 0px 35px;
-  min-width: 170px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: none;
-  background: transparent;
-  color: #e4b95b;
-  font-size: 16px;
-  font-weight: 700;
-}
-.bg-darkCupon:hover,
-.bg-yellowCupon:hover {
-  text-decoration: none;
-  color: white;
-}
-.bg-darkCupon {
-  background-color: #20202f !important;
-  color: white;
-}
-.bg-yellowCupon {
-  background-color: #c7a17a !important;
-  color: white;
-}
-.bg-darkCupon:hover {
-  color: #c7a17a;
-}
-.bg-yellowCupon:hover {
-  background-color: #e4b95b !important;
-}
-.campoCupon input {
-  text-align: center;
-  color: #372727;
-  margin: 0px;
-  height: 50px;
-  width: 100%;
-  border: 2px solid #dee2e6;
-  border-radius: 80px;
-  padding: 0 30px;
-  outline: none;
-}
-*/
 
 .campoCupon {
   display: inline-block;
@@ -685,10 +722,11 @@ footer {
 .bg-yellowCupon {
   background-color: #c7a17a !important;
   color: white;
-  float:right!important;
+  float: right !important;
 }
 .bg-darkCupon:hover {
-  color: #c7a17a;
+  background-color: #e4b95b !important;
+  color: white !important;
 }
 .bg-yellowCupon:hover {
   background-color: #e4b95b !important;
@@ -704,7 +742,7 @@ footer {
   padding: 0 30px;
   outline: none;
 }
-.actualizarListado{
+.actualizarListado {
   width: 100%;
 }
 /*V2*/
@@ -727,7 +765,7 @@ footer {
   border-left: none;
   border-right: none;
   padding-bottom: 10px;
-  padding-left: 20px; 
+  padding-left: 20px;
   border-radius: 10px;
 }
 .mainCartList img {
@@ -762,41 +800,39 @@ footer {
 .imgProduct {
   align-self: center;
 }
-.cantidadP{
+.cantidadP {
   background-color: #dee2e6;
-    padding: 5px 14px 5px 14px;
-    color: grey;
-    font-weight: 600;
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 90%;
-    position: absolute;
+  padding: 5px 14px 5px 14px;
+  color: grey;
+  font-weight: 600;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 90%;
+  position: absolute;
 }
 
-
-
-.cardTotals{
+.cardTotals {
   border-radius: 10px;
 }
 
-.txtSubtotal{
+.txtSubtotal {
   font-size: 1.4rem;
 }
-.priceSubtotal{
+.priceSubtotal {
   font-size: 1.4rem;
 }
-.txtTotal{
+.txtTotal {
   font-size: 1.7rem;
   font-weight: 700;
   color: #20202f;
 }
-.priceTotal{
+.priceTotal {
   font-size: 1.7rem;
   font-weight: 700;
   color: #e4b95b;
 }
-.tituloSecctionT{
+.tituloSecctionT {
   font-size: 2rem;
   text-align: center;
   font-weight: 700;
@@ -805,13 +841,203 @@ footer {
   padding-top: 5px;
 }
 
-.preciosSubTotP thead{
+.preciosSubTotP thead {
   display: none;
 }
-.preciosSubTotP td,.preciosSubTotP th {
+.preciosSubTotP td,
+.preciosSubTotP th {
   border-style: none;
-  border:none!important;
+  border: none !important;
 }
+/*TABLE PADDINGS*/
+.tablaProducts1 .productoCantidadC,
+.tablaProducts1 .producto {
+  padding-left: 0 !important;
+}
+.tablaProducts1 .total,
+.tablaProducts1 .productoPrecioC {
+  text-align: end !important;
+}
+
+/*PROGRESS BAR*/
+.progressBar .bg-warning {
+  background-color: #e4b95bb3 !important;
+}
+
+/*=============================CHECOUT*/
+.productoCantidadC .nombreProduct {
+  font-size: 0.8rem;
+  padding-right: 15px;
+}
+.mainCheckout .tablaProducts1 th,
+.mainCheckout .tablaProducts1 td {
+  border: none;
+}
+
+.mainCheckout h6 {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+}
+.carritoSubtotal {
+  display: inline-block;
+  width: 98%;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.carritoSubtotal h6,
+.envioTotal h6,
+.ordenTotalPagar h6 {
+  margin: 0px;
+}
+.envioTotal {
+  margin: 0px;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 0px 15px 0px;
+}
+.carritoSubtotal {
+  margin: 0px;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 0px 15px 0px;
+}
+.envioTotal h6 {
+  margin: 0px;
+}
+.carritoSubtotal h6 {
+  margin: 0px;
+}
+.carritoSubtotal small,
+.envioTotal small {
+  float: right;
+  font-size: 15px;
+  color: #959393;
+}
+.ordenTotalPagar {
+  padding: 15px 0px 15px 0px;
+}
+.ordenTotalPagar .titulo_ParrafosYellow {
+  float: right;
+  font-size: 1.5rem !important;
+}
+
+input[type="radio"]:after {
+  width: 19px;
+  height: 19px;
+  border-radius: 14px;
+  top: -2px;
+  left: -1.5px;
+  position: relative;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e9ecef;
+}
+input[type="radio"]:checked:after {
+  width: 19px;
+  height: 19px;
+  border-radius: 14px;
+  top: -2px;
+  left: -1.5px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e9ecef;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #ffa500 !important;
+  background-color: #ffa500 !important;
+}
+
+.form-control {
+  border-radius: 0.8rem !important;
+}
+
+.mainCheckout .bloqueIzquierda .parte1,
+.mainCheckout .bloqueDerecha .parte2 {
+  padding: 5% !important;
+  border-radius: 20px;
+}
+
+/*SUCCESS*/
+.bigLetter,
+.bigLetter2 {
+  font-size: 6rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+.bigLetter2 {
+  margin-top: 0px;
+}
+
+.actualizarListado .btn-mediano {
+  border: none !important;
+}
+/*============================LOGIN, REGISTER*/
+.formularioLogin .btn-mediano,
+.formularioRegistro .btn-mediano {
+  width: 100% !important;
+}
+
+a.linkText {
+  text-decoration: none;
+  color: #20202f;
+}
+a.linkText:hover {
+  text-decoration: none;
+  color: #e4b95b;
+  font-weight: 500;
+}
+
+.tabsLogRegistro {
+  border: none !important;
+}
+.tabsLogRegistro li {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: #20202f;
+}
+.tabsLogRegistro li a {
+  color: #20202f;
+}
+.tabsLogRegistro li a:hover {
+  color: #e4b95b;
+  text-decoration: none;
+}
+.tabsLogRegistro {
+  /* border-bottom: 2px solid #e4b95b!important;
+  border-bottom-left-radius: 10px;
+  width: 100%;*/
+}
+.opActive {
+  /* background-color: #e4b95b!important;*/
+  border-bottom: 2px solid #e4b95b !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+.opActive a:hover {
+  color: #20202f !important;
+}
+
+/*
+.formularioLogin .btn-mediano:hover{
+    background-color: #e4b95b !important;
+    color:white!important;
+} */
+.mainSliderHomePage .btn-mediano{
+  border: 2px solid white!important;
+}
+.mainSliderHomePage .btn-mediano:hover{  
+  border: none!important;
+}
+
+
 /*===================================================================MEDIA QUERY*/
 @media (max-width: 575.98px) {
   .customImgOffert {
@@ -858,8 +1084,18 @@ footer {
     text-align: center;
   }
 
-  .cantidadP{ 
-    left: 85%!important;
+  .cantidadP {
+    left: 85% !important;
+  }
+
+  /*SLIDEEEEEE*/
+  .mainSliderHomePage .contenidoSlider{
+    padding-top: 90%!important;
+  }
+  .mainSliderHomePage .btn-mediano{
+    width: auto!important;
+    height: auto!important;
+    font-size: 60%!important;
   }
 }
 
@@ -917,25 +1153,40 @@ footer {
     display: block;
   }
 
-  .campoCupon{
-    display: block!important; 
-    width: 90%!important;
-    margin: auto!important;
+  .campoCupon {
+    display: block !important;
+    width: 90% !important;
+    margin: auto !important;
   }
-  .btn-mediano{
-    display: block!important;
-    margin-top:10px!important;  
+  .btn-mediano {
+    display: block !important;
+    margin-top: 10px !important;
   }
-  .bg-darkCupon{
-    margin-left: 20px!important;
-    margin-right: 20px!important;
-    
+  .bg-darkCupon {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
-  .bg-yellowCupon{
-    margin-left: 20px!important;
-    margin-right: 20px!important;
-  float:none!important;
+  .bg-yellowCupon {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    float: none !important;
   }
+
+  /*SLIII*/
+  .mainSliderHomePage .contenidoSlider{
+    padding-top: 40%;
+  }
+  .mainSliderHomePage .contenidoSlider h5{
+    font-size: 30px;
+  }
+  .mainSliderHomePage .contenidoSlider p{
+    font-size: 1.2rem;
+  }
+  .mainSliderHomePage .btn-mediano{
+    width: auto;
+    font-size: 80%;
+  }
+ 
 }
 
 @media (min-width: 768px) {
@@ -966,27 +1217,24 @@ footer {
     font-size: 30px !important;
   }
 
-  .campoCupon{
-    display: inline-block!important; 
-    width: auto!important;
-    margin: auto!important;
+  .campoCupon {
+    display: inline-block !important;
+    width: auto !important;
+    margin: auto !important;
   }
-  .btn-mediano{
-    display: inline-block!important;
-    margin-top:0px!important;  
+  .btn-mediano {
+    display: inline-block !important;
+    margin-top: 0px !important;
   }
-  .bg-darkCupon{
-    margin-left: auto!important;
-    margin-right: auto!important;
-    
+  .bg-darkCupon {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  .bg-yellowCupon{
-    margin-left: auto!important;
-    margin-right: auto!important;
-  float:right!important;
+  .bg-yellowCupon {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: right !important;
   }
-
-  
 }
 
 @media (min-width: 768px) and (max-width: 769px) {
@@ -1008,7 +1256,7 @@ footer {
   .tituloPaginasCabera {
     font-size: 40px !important;
   }
-  .cantidadP{  
-    left: 92%!important;
+  .cantidadP {
+    left: 92% !important;
   }
 }

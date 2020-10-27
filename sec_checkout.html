@@ -13,7 +13,7 @@
     <!-- IONICONS -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
-    <title>Ofertas</title>
+    <title>Cart - Checkout</title>
 </head>
 
 <body>
@@ -185,7 +185,8 @@
 
                     <div class="breadcrumb-inner">
                         <a href="#">Home</a>
-                        <span>Cart List</span>
+                        <a href="#">Cart List</a>
+                        <span>Checkout</span>
                     </div>
                 </div>
 
@@ -200,97 +201,168 @@
         </div>
     </div>
 
-    <section class="mainCartList pb-5 pt-5">
+    <section class="mainCheckout pb-5 pt-5">
         <div class="container">
-            <h2 class="titulo_PaginasDark"> Cart List</h2>
+            <h2 class="titulo_PaginasDark"> Checkout</h2>
             <div class="  progressBar pt-3 pb-5">
                 
                 <div class="progress shadow-sm">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                 </div>
-            </div>
-            
-            <br><br><br>
+            </div><br><br><br>
             <div class="row">
-                <div class="card mb-3 shadow-sm ">
-                    <div class="row no-gutters">
-                        <div class="col-md-2 col-sm-12 col-12 imgProduct">
-                            <img src="images/pizzaPersonal.jpg" class="card-img" alt="...">
+                <div class="col-md-7  bloqueIzquierda">
+                    <div class="parte1 shadow">
+                        <div class="secCabecera1">
+                            <h6 class="titulo_ParrafosDark">Iniciar Sesión / Registrarse para continuar.</h6> <br>
                         </div>
-                        <div class="col-md-10 col-sm-12 col-12 txtProduct">
-                            <div class="card-body">
-                                <h5 class="card-title">$ 12</h5>
-                                <p class="card-text"><strong>Pizza de pollo</strong> - <span class="tipoMasa">
-                                        Personal
-                                    </span> <span class="cantidadP">1 </span></p>
-                                <span class="ingredientesExtra">
-                                    <small class="text-muted">+ Pepperoni</small>
-                                    <small class="text-muted">+ Pepperoni</small>
-                                </span>
-
-                                <button type="button" class="btn btn-danger btn-sm removeProduct">
-                                    <ion-icon name="trash-outline"></ion-icon> Eliminar
-                                </button>
-                                <button type="button" class="btn btn-primary btn-sm editProduct">
-                                    <ion-icon name="create-outline"></ion-icon> Editar
-                                </button>
-
-                            </div>
+                        <div class="formularioContacto">
+                            <h4 class="titulo_ParrafosDark">Datos de Envío / Facturación</h4> <br>
+                            <form action="" method="POST" role="form">
+    
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="nombre">Nombres</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="apellido">Apellidos</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="cedula">Cedula</label>
+                                        <input type="text" class="form-control" id="cedula" name="cedula">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="correo">Email</label>
+                                        <input type="email" class="form-control" id="correo" name="correo">
+                                    </div>
+    
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="provincia">Provincia</label>
+                                        <input type="email" class="form-control" id="provincia" name="provincia">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="ciudad">Ciudad</label>
+                                        <input type="text" class="form-control" id="ciudad" name="ciudad">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="tlfconcencional">Tlf. Convencional</label>
+                                        <input type="email" class="form-control" id="tlfconcencional"
+                                            name="tlfconcencional">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="tlfcelular">Tlf. Celular</label>
+                                        <input type="text" class="form-control" id="tlfcelular" name="tlfcelular">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Dirección</label>
+                                    <input type="text" class="form-control" id="direccion" name="direccion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="referencia">Referencia</label>
+                                    <input type="text" class="form-control" id="referencia" name="referencia">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="codigopostal">Codigo Postal</label>
+                                        <input type="email" class="form-control" id="codigopostal" name="codigopostal">
+                                    </div>
+    
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="direccionFacturacionDiferente"
+                                        name="direccionFacturacionDiferente">
+                                    <label class="custom-control-label" for="direccionFacturacionDiferente">Dirección de
+                                        Facturación Diferente</label>
+                                </div>
+    
+    
+                            </form>
                         </div>
+    
                     </div>
                 </div>
+                <div class="col-md-5  bloqueDerecha">
+                   <div class="parte2 shadow">
+                    <div class="secCabecera2">
+                        <h4 class="titulo_ParrafosDark text-center">TU ORDEN</h4>
+                        <div class="table-responsive">
+                            <table class="table tablaProducts1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="producto">
+                                            <h6>PRODUCTO</h6>
+                                        </th>
+                                        <th scope="col" class="total">
+                                            <h6>TOTAL</h6>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="productoCantidadC"><span class="nombreProduct">Pizza de pollo -
+                                                Personal</span> <small class="cantidadPC">x1</small></td>
+                                        <td class="productoPrecioC">$12</td>
+                                    </tr>
 
-
-                <div class="actualizarListado pt-3">
-                    <div class="campoCupon">
-                        <input type="text" name="txt" placeholder="Código de cupón">
-                    </div>
-                    <a href="#" class="btn-mediano bg-darkCupon ">Aplicar Cupón</a>
-                    <a href="#" class="btn-mediano bg-yellowCupon">Actualizar</a>
-                </div>
-            </div>
-
-            <div class="row totalPriceP justify-content-end pt-5">
-
-                <div class="col-md-7 col-lg-6 float-right shadow-sm p-4 cardTotals">
-                    <h2 class="tituloSecctionT"> Total a Pagar</h2>
-
-                    <div class="table-responsive">
-                        <table class="table preciosSubTotP">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><span class="txtSubtotal">Total de productos</span></td>
-                                    <td class="text-right"><span class="priceSubtotal">$12</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="txtSubtotal">Total de envío</span></td>
-                                    <td class="text-right"><span class="priceSubtotal">$3.50</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="txtTotal">Total</span></td>
-                                    <td class="text-right"><span class="priceTotal">$15.50</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="row pt-4">
-                        <div class="actualizarListado pagarBtnTotalCart pt-3">
-                            <a href="#" class="btn-mediano bg-yellowCupon">Pagar</a>
+                                </tbody>
+                            </table>
                         </div>
 
+                        <div class="carritoSubtotal">
+                            <h6>SUBTOTAL <small class="precioST">$12</small></h6>
+                        </div>
+                        <div class="envioTotal">
+                            <h6>Envío <small class="precioST">$3.50</small></h6>
+                        </div>
+                        <div class="ordenTotalPagar">
+                            <h6>ORDEN TOTAL <small class="titulo_ParrafosYellow">$15,50</small></h6>
+                        </div>
                     </div>
+
+                    <div class="secCabecera3 mt-5">
+
+                        <h4 class="titulo_ParrafosDark text-center">METODOS DE PAGO</h4>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opcionpago" id="efectivo" name="efectivo"
+                                value="option1" checked>
+                            <label class="form-check-label" for="efectivo">
+                                Efectivo
+                            </label>
+                        </div><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="opcionpago" id="exampleRadios2"
+                                name="tarjetacredito" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Tarjeta de crédito o débito (Visa, Master Card, American Express)
+                            </label>
+                        </div><br>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="terminosycondiciones"
+                                name="terminosycondiciones">
+                            <label class="custom-control-label" for="terminosycondiciones">Estoy de acuerdo y acepto los
+                                <a href="#">términos y condiciones.</a></label>
+                        </div>
+
+                        <div class="actualizarListado pt-3 d-flex justify-content-center">
+
+                            <a href="#" class="btn-mediano bg-yellowCupon">PROCEDER A PAGAR</a>
+                        </div>
+                    </div>
+                   </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
 
