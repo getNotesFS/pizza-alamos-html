@@ -1286,3 +1286,31 @@ a.linkText:hover {
   padding:5% 0;
   /*background-color: red;*/
 }
+.mn-cards{
+  margin-top: 50px;
+}
+.mn-botones{
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.mn-botones-texto{
+  font-size: x-large;
+}
+.mn-productos{
+  text-align: left;
+  margin-top: 60px;
+}
+.mn-productos-precio{
+  margin-right: 30px;
+}
+.mn-productos-botones{
+  padding: 10px;
+  background-color: whitesmoke;
+  -webkit-transition:color 0.5s ease-in;
+}
+.mn-productos-botones:hover{
+  color: white;
+  background-color: black;
+}
