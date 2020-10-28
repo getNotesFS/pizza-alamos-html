@@ -291,6 +291,16 @@ footer {
 .carousel-item{
   height: 500px;
 }
+
+
+/*SECCION SERVICIOS*/
+.listadoServicios ion-icon{
+  color:#20202f;
+  font-size: 80px;
+}
+.listadoServicios .card{
+  border: none!important;
+}
 /*======================================CONTACT*/
 
 .form_datosContacto {
@@ -1235,6 +1245,8 @@ a.linkText:hover {
     margin-right: auto !important;
     float: right !important;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 769px) {
@@ -1248,6 +1260,12 @@ a.linkText:hover {
     margin-right: 15px !important;
     margin-left: 15px !important;
   }
+  .listadoServicios .col-md-3 { 
+    
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%!important;
+}
 }
 
 @media (min-width: 992px) {
