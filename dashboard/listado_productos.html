@@ -128,8 +128,8 @@
 
                 <!-- AQUÍ VA OTRAS COSAS QUE SE NECESITE EN LA CABECERA DEL DASHBOARD -->
 
-                <h2>Listado Ingredientes</h2>
-                <div class="table-responsive">
+                <h5>Listado Ingredientes</h5>
+                <div class="table-responsive tablaIngredientes">
                     <table class="table table-striped table-sm">
                         <thead>
                             <tr>
@@ -142,21 +142,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
+                                <td class="idProducto">1</td>
+                                <td class="imagenIng"><img src="../images/ingredientes/cebolla.png" alt=""></td>
+                                <td class="nombreIng">Cebolla</td>
+                                <td class="precioIng">0.95</td>
+                                <td class="crudProducto"><a href="#" data-toggle="modal"
+                                        data-target="#modalEditarIngrediente">Editar</a> <a href="#">Eliminar</a></td>
                             </tr>
-                             
+
 
                         </tbody>
                     </table>
                 </div>
                 <br>
                 <br>
-                <h2>Listado Pizzas</h2>
-                <div class="table-responsive">
+                <h5>Listado Pizzas</h5>
+                <div class="table-responsive tablaPizzas">
                     <table class="table table-striped table-sm">
                         <thead>
                             <tr>
@@ -170,17 +171,155 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
-                                <td>sit</td>
+                                <td class="idProducto">1</td>
+                                <td class="imagenPiz"><img src="../images/productos/pizzaJamon.png" alt=""></td>
+                                <td class="nombrePiz">Pizza Jamón</td>
+                                <td class="ingredientesPiz">Cebolla, Jamón, Queso</td>
+                                <td class="precioPiz">11.50</td>
+                                <td class="crudProducto"><a href="#" data-toggle="modal"
+                                        data-target="#modalEditarPizza">Editar</a> <a href="#">Eliminar</a></td>
                             </tr>
-                             
+
 
                         </tbody>
                     </table>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalEditarPizza" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Editar</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row p-3 justify-content-center">
+
+                                        <div class="col-md-10">
+                                            <form method="POST" action="/pizza/edit" role="form">
+                                                <div class="form-group">
+                                                    <label for="nombre">Nombre</label>
+                                                    <input class="form-control" type="text" name="nombre" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="descripcion">Descripción</label>
+                                                    <textarea class="form-control" name="descripcion"
+                                                        required></textarea>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="categoria">Categoría</label>
+                                                    <select class="form-control" name="categoria" required>
+                                                        <option selected="">Selecciona una categoría...</option>
+                                                        <option value="Vegana">Vegana</option>
+                                                        <option value="Oriental">Oriental</option>
+                                                        <option value="Otro">Otro</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="tipomasa">Tipo Masa</label>
+                                                    <select class="form-control" name="tipomasa" required>
+                                                        <option selected="">Selecciona un tipo de masa...</option>
+                                                        <option value="0">Fina</option>
+                                                        <option value="1">Gruesa</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="tamanio">Tamaño</label>
+                                                    <select class="form-control" name="tamanio" required>
+                                                        <option selected="">Selecciona un tamaño...</option>
+                                                        <option value="0">Grande</option>
+                                                        <option value="1">Mediana</option>
+                                                        <option value="2">Personal</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="precio">Precio</label>
+                                                    <input class="form-control" type="text" name="precio" required />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="imagen">Imagen <small>(Solo hay:pizzaPollo, pizzaJamon,
+                                                            pizzaMixto, pizzaQueso, pizzaTomate, pizzaVegana
+                                                            )</small></label>
+                                                    <input class="form-control" type="text" name="imagen"
+                                                        placeholder="pizzaPollo" required />
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <label for="ingredientes">Ingredientes</label>
+                                                    <select class="form-control" multiple="" name="ingredientes">
+                                                        <option value="5f84ac2280986513c4e7d193">Cebolla</option>
+                                                        <option value="5f84ac2280986513c4e7d193">Tomate</option>
+                                                        <option value="5f84ac2280986513c4e7d193">Champiñon</option>
+                                                        <option value="5f84ac2280986513c4e7d193">Jamón</option>
+                                                        <option value="5f84ac2280986513c4e7d193">Pollo</option>
+                                                    </select>
+                                                </div>
+
+                                                <button class="btn btn-primary" type="submit">Guardar Producto</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalEditarIngrediente" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Editar</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row p-3 justify-content-center">
+
+                                        <div class="col-md-10">
+                                            <form method="POST" action="/pizza/edit" role="form">
+                                                <div class="form-group">
+                                                    <label for="nombre">Nombre</label>
+                                                    <input class="form-control" type="text" name="nombre" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="precio">Precio</label>
+                                                    <input class="form-control" type="text" name="precio" required />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="imagen">Imagen <small>(Solo hay cebolla, champinion,
+                                                            tomate, queso, pollo,
+                                                            pinia, tocino o jamon)</small></label>
+                                                    <input class="form-control" type="text" name="imagen"
+                                                        placeholder="tomate" required />
+                                                </div>
+
+
+                                                <button class="btn btn-primary" type="submit">Guardar Producto</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </main>
         </div>
